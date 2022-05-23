@@ -1,0 +1,12 @@
+N = 50;
+l = 0.14605; % length
+dl = l/(N-1);
+r0 =  2.9074e-04/2; % radius of the rod
+rou = 436; % density kg/m3
+E = 1e9; % Young's Modulus
+I = pi/4*(r0^4);
+A = pi*r0^2;
+rou_al = 436;
+m  = pi*(r0^2)*l*rou_al/(N-1);
+dt = 0.001;
+dampratio = 0.00001;
